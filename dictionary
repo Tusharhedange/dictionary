@@ -1,0 +1,22 @@
+
+d=dict()
+while True:
+    name=input('please enter student name: ')
+    marks=int(input('please enter student marks: '))
+    d[name]=marks
+    option=input('enter one more data? yes/no ')
+    while True:
+        if option.lower()=='no':
+            break
+        elif option.lower()=='yes':
+            break
+        else:
+            option=input('please enter valid option yes/no ')
+    if option.lower()=='no':
+        break
+print(d)
+search=input('search student name: ')
+if search in d:
+    print(search,' marks is :',d[search])
+else:
+    print('not available')
